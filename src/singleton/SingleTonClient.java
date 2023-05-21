@@ -9,10 +9,10 @@ public class SingleTonClient {
         System.out.println(singleton2.hashCode());*/
         //
 
-        SingletonLazy singletonLazy=SingletonLazy.getSingleton();
+        SingletonLazy singletonLazy = SingletonLazy.getSingletonThreadSafe();
         System.out.println(singletonLazy.hashCode());
 
-        SingletonLazy singletonLazy2=SingletonLazy.getSingleton();
+        SingletonLazy singletonLazy2 = SingletonLazy.getSingletonThreadSafe();
         System.out.println(singletonLazy.hashCode());
     }
 }
