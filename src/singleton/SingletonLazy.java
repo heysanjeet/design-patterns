@@ -14,10 +14,4 @@ public class SingletonLazy {
         return singleton;
     }
 
-    public synchronized static SingletonLazy getSingletonThreadSafe() {
-        if (singleton == null) {
-            singleton = new SingletonLazy();
-        }
-        return singleton;
-    }
 }
