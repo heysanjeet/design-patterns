@@ -22,5 +22,12 @@ public class SingleTonClient {
         SingletonLazyMultithreaded singletonLazyMultithreaded2 = SingletonLazyMultithreaded.getSingletonLazyMultithreaded();
         System.out.println(singletonLazyMultithreaded2.hashCode());
 
+        System.out.println("-------------multithreading double check---------------");
+        SingletonLazyDoubleCheck singletonLazyDoubleCheck=SingletonLazyDoubleCheck.getSingletonLazyDoubleCheck();
+        System.out.println(singletonLazyDoubleCheck.hashCode());
+
+        SingletonLazyDoubleCheck singletonLazyDoubleCheck2=SingletonLazyDoubleCheck.getSingletonLazyDoubleCheck();
+        System.out.println(singletonLazyDoubleCheck2.hashCode());
+
     }
 }
