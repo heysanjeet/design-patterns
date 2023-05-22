@@ -29,5 +29,12 @@ public class SingleTonClient {
         SingletonLazyDoubleCheck singletonLazyDoubleCheck2=SingletonLazyDoubleCheck.getSingletonLazyDoubleCheck();
         System.out.println(singletonLazyDoubleCheck2.hashCode());
 
+        System.out.println("-----------Using serializer.......");
+        Singleton singletonS=Singleton.getSingleton();
+        System.out.println(singletonS.hashCode());
+
+        Singleton singletonSS=Singleton.getSingleton();
+        System.out.println(singletonSS.hashCode());
+
     }
 }
